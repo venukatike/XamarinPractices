@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom="clr-namespace:EntryCustomRenderer;assembly=EntryCustomRenderer"
+             x:Class="EntryCustomRenderer.MainPage"
+             >
+
+    <StackLayout Padding="20">
+        <Label Text="Login" FontSize="23" HorizontalTextAlignment="Center"/>
+        <custom:EntryStyle Placeholder="Enter Your Name"/>
+        <custom:EntryStyle Placeholder="Enter Your Password" IsPassword="True"/>
+        <custom:DatePickerStyle></custom:DatePickerStyle>
+        <Button Text="Login" BackgroundColor="MediumPurple" TextColor="White"></Button>
+    </StackLayout>
+
+</ContentPage>

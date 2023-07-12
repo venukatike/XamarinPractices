@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomRendererExample.MainPage"
+             
+             xmlns:CustomControl="clr-namespace:CustomRendererExample;assembly=CustomRendererExample">
+
+    <StackLayout>
+        <Label Text="Login" FontSize="32" HorizontalTextAlignment="Center" Padding="20"/>
+        <CustomControl:EntryCustomControl Placeholder="Enter your Name"/>
+        <CustomControl:EntryCustomControl Placeholder="Enter your Password"/>
+        <CustomControl:ButtonControlCustom Text="Login"></CustomControl:ButtonControlCustom>
+
+    </StackLayout>
+
+</ContentPage>

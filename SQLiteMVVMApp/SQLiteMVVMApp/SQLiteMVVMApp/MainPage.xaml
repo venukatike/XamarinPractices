@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLiteMVVMApp.MainPage">
+
+    <!-- <ContentPage.BindingContext> -->
+    <!--     <viewModels:MainPageViewModel></viewModels:MainPageViewModel> -->
+    <!-- </ContentPage.BindingContext> -->
+
+    <!-- <ContentPage.Resources> -->
+    <!--     <Style x:Key="DarkLabelStyle" TargetType="Label"> -->
+    <!--         <Setter Property="BackgroundColor" Value="Black" /> -->
+    <!--         <Setter Property="TextColor" Value="White" /> -->
+    <!--     </Style> -->
+    <!--     <Style x:Key="LightLabelStyle" TargetType="Label"> -->
+    <!--         <Setter Property="BackgroundColor" Value="White" /> -->
+    <!--         <Setter Property="TextColor" Value="Black" /> -->
+    <!--     </Style> -->
+    <!-- </ContentPage.Resources> -->
+    <!-- -->
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="My Xamarin Application" Style="{DynamicResource TitleStyle}" HorizontalTextAlignment="Center">
+            <Label.Padding>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS">30 0 0 0</On>
+                </OnPlatform>
+            </Label.Padding>
+        </Label>
+        <Label Text="Welcome to Xamarin.Forms!" 
+               x:Name="LabelWelcome"
+               Style="{StaticResource LightLabelStyle}"
+               HorizontalOptions="Center"
+               FontSize="{DynamicResource LabelFontSize}"
+           VerticalOptions="CenterAndExpand" />
+
+        <StackLayout Padding="30">
+            <Entry Placeholder="First name" Text="{Binding FirstName}" />
+            <Entry Placeholder="Last name" Text="{Binding LastName}" />
+            <Button Text="Save to database" Command="{Binding SaveDataCommand}" />
+        </StackLayout>
+
+        <!-- <Button x:Name="BtnIncreseFontSize" Text="++" Clicked="BtnIncreseFontSize_OnClicked" /> -->
+        <!-- <Button x:Name="BtnLightStyle" Text="Light mode" Clicked="BtnLightStyle_OnClicked" /> -->
+        <!-- <Button x:Name="BtnDarkStyle" Text="Dark mode"  Clicked="BtnDarkStyle_OnClicked"/> -->
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BehaviorsExample"
+             x:Class="BehaviorsExample.MainPage">
+
+    <StackLayout Margin="6">
+        <Label Text="Login" HorizontalOptions="CenterAndExpand" FontSize="34"/>
+        <Entry Placeholder="enter your name"></Entry>
+        <Entry Placeholder="enter your password"></Entry>
+        
+        <Entry Placeholder="Enter email" >
+            <Entry.Behaviors>
+                <local:BehaviorClass1/>
+            </Entry.Behaviors>
+        </Entry>
+        <Button Text="login" BackgroundColor="Purple" TextColor="White"></Button>
+    </StackLayout>
+
+</ContentPage>

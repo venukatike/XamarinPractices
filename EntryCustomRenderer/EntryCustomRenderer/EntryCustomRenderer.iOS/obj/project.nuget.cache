@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "dloA5LsVhPpAqPdZ1Wx0C8XywXNN2xhFtVm5jLMHA1bVOnMybF9P/5fzatIwZEsSNVXJjIy0rmVeN5SDpE+w4w==",
+  "success": true,
+  "projectFilePath": "E:\\pevs\\Xamarin\\EntryCustomRenderer\\EntryCustomRenderer\\EntryCustomRenderer.iOS\\EntryCustomRenderer.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Venu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Venu\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Venu\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
